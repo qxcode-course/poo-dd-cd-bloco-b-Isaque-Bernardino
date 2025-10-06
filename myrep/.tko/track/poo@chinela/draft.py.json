@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-06_19-58-31",
+            "content": "@@ -1,21 +1,21 @@\n class C\n-hinela\n+al%C3%A7ado\n ():%0A    \n@@ -90,39 +90,8 @@\n elf)\n-:%0A        return self.__tamanho\n %0A   \n@@ -124,16 +124,24 @@\n or: int)\n+ -%3E None\n :%0A      \n@@ -312,279 +312,12 @@\n urn%0A\n-def main():%0A    chinela = Chinela()%0A    while chinela.get_tamanho() == 0:%0A        print(%22Digite seu tamanho de chinela%22)%0A        tamanho = int(input())%0A        chinela.set_tamanho(tamanho)%0A%0A    print(%22Parabens, voc%C3%AA comprou uma chinela tamanho%22, chinela.getTamanho())%0Amain();\n+        \n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-10-06_20-10-06",
+            "content": "@@ -88,17 +88,16 @@\n (self):%0A\n-%0A\n         \n@@ -159,16 +159,8 @@\n int)\n- -%3E bool\n :%0A  \n@@ -230,38 +230,32 @@\n           return\n- False\n %0A        if valo\n@@ -334,43 +334,8 @@\n turn\n- False%0A        return True%0A        \n %0Adef\n@@ -491,19 +491,16 @@\n         \n-if \n chinela.\n@@ -523,35 +523,8 @@\n nho)\n-==True:%0A            break%0A%0A\n %0A%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-10-06_20-21-11",
+            "content": "@@ -660,34 +660,33 @@\n ho%22, chinela.get\n-_t\n+T\n amanho())%0Amain()\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-06_20-21-42",
+            "content": "class Chinela():\n    def __init__(self):\n        self.__tamanho = 0\n    def get_tamanho(self):\n\n        return self.__tamanho\n    def set_tamanho(self, valor: int) -> bool:\n        if valor % 2 != 0:\n            print(\"valor inv\u00e1lido\")\n            return False\n        if valor < 20 or valor > 50:\n            print(\"valor inv\u00e1lido\")\n            return False\n        return True\n        \ndef main():\n    chinela = Chinela()\n    while chinela.get_tamanho() == 0:\n        print(\"Digite seu tamanho de chinela\")\n        tamanho = int(input())\n        if chinela.set_tamanho(tamanho)==True:\n            break\n\n\n\n    print(\"Parabens, voc\u00ea comprou uma chinela tamanho\", chinela.get_tamanho())\nmain();",
+            "lines": "27"
+        }
+    ]
+}
