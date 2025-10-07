@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-07_19-47-41",
+            "content": "@@ -191,33 +191,24 @@\n != %22PP%22 and \n-etiqueta \n != %22P%22 and e\n@@ -202,33 +202,24 @@\n  != %22P%22 and \n-etiqueta \n != %22M%22 and e\n@@ -213,33 +213,24 @@\n  != %22M%22 and \n-etiqueta \n != %22G%22 and e\n@@ -224,33 +224,24 @@\n  != %22G%22 and \n-etiqueta \n != %22GG%22 and \n@@ -240,25 +240,16 @@\n GG%22 and \n-etiqueta \n != %22XG%22:\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-07_19-48-25",
+            "content": "@@ -313,16 +313,17 @@\n  print(%22\n+ \n tamanho \n@@ -364,29 +364,41 @@\n %C3%A3o: \n+%22\n PP\n+%22\n , \n-P, M e G\n+%22P%22, %22M%22 e %22G%22\n , \n+%22\n GG\n+%22\n  e \n+%22\n XG\n+%22\n .%22)%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-07_19-49-27",
+            "content": "@@ -405,16 +405,34 @@\n n False%0A\n+        else:%0A    \n         \n@@ -457,16 +457,20 @@\n tiqueta%0A\n+    \n         \n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-07_19-49-50",
+            "content": "@@ -491,16 +491,18 @@\n  Camisa(\n+%22%22\n )%0A    wh\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-10-07_19-50-17",
+            "content": "@@ -711,21 +711,20 @@\n manho%22, \n-camis\n+roup\n a.getTam\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-10-07_19-50-40",
+            "content": "@@ -717,26 +717,25 @@\n , camisa.get\n-_t\n+T\n amanho())%0Ama\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-10-07_19-50-53",
+            "content": "@@ -388,28 +388,24 @@\n .%22)%0A        \n-    \n return False\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-10-07_19-51-35",
+            "content": "@@ -747,6 +747,5 @@\n in()\n-;\n %0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-10-07_19-53-05",
+            "content": "@@ -551,16 +551,20 @@\n queta = \n+str(\n input(%22i\n@@ -592,16 +592,17 @@\n oupa: %22)\n+)\n %0A       \n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-10-07_19-55-07",
+            "content": "@@ -529,18 +529,17 @@\n anho == \n-%22%22\n+0\n :%0A      \n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-10-07_19-55-41",
+            "content": "@@ -556,12 +556,8 @@\n a = \n-str(\n inpu\n@@ -589,17 +589,16 @@\n oupa: %22)\n-)\n %0A       \n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-10-07_19-55-55",
+            "content": "@@ -507,20 +507,40 @@\n   while \n-True\n+camisa.get_tamanho == %22%22\n :%0A      \n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-10-07_19-56-15",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho: str = \"\"\n    def get_tamanho(self):\n        return self.__tamanho\n    def set_tamanho(self, etiqueta: str):\n        if etiqueta != \"PP\" and etiqueta != \"P\" and etiqueta != \"M\" and etiqueta != \"G\" and etiqueta != \"GG\" and etiqueta != \"XG\":\n            print(\"tamanho inv\u00e1lido! Os tamanhos permitidos s\u00e3o: PP, P, M e G, GG e XG.\")\n            return False\n        self.__tamanho = etiqueta\n        return True\ndef main():\n    camisa = Camisa()\n    while True:\n        etiqueta = str(input(\"informe o tamanho da roupa: \"))\n        if camisa.set_tamanho(etiqueta) == True:\n            break\n    print(\"Parabens, voc\u00ea comprou uma roupa tamanho\", camisa.get_tamanho())\nmain();\n",
+            "lines": "19"
+        }
+    ]
+}
