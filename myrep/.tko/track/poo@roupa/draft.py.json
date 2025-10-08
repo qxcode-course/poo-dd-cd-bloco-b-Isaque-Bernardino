@@ -1,0 +1,219 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-08_22-50-16",
+            "content": "@@ -514,312 +514,8 @@\n misa\n-()%0A    while True:%0A        line: str = input()%0A        print(%22$%22 + line)%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            print(camisa)%0A        elif args%5B0%5D == %22size%22:%0A            letter = str = str(args%5B1%5D)%0A            \n %0Amai\n",
+            "lines": "16"
+        },
+        {
+            "label": "2025-10-08_22-57-47",
+            "content": "@@ -483,68 +483,8 @@\n rue%0A\n-    def __str__(self) -%3E str:%0A        return f%22size: %22 + ()%0A\n def \n@@ -802,16 +802,28 @@\n rgs%5B1%5D)%0A\n+            \n %0Amain()%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-08_22-59-21",
+            "content": "@@ -533,16 +533,21 @@\n %22size: %22\n+ + ()\n %0Adef mai\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-08_22-59-26",
+            "content": "@@ -532,18 +532,16 @@\n f%22size: \n-()\n %22%0Adef ma\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-08_22-59-37",
+            "content": "@@ -131,32 +131,47 @@\n set_tamanho(self\n+, etiqueta: str\n ):%0A        if ar\n@@ -168,23 +168,24 @@\n      if \n-args%5B1%5D\n+etiqueta\n  != %22PP%22\n@@ -185,31 +185,32 @@\n != %22PP%22 and \n-args%5B1%5D\n+etiqueta\n  != %22P%22 and \n@@ -205,31 +205,32 @@\n  != %22P%22 and \n-args%5B1%5D\n+etiqueta\n  != %22M%22 and \n@@ -225,31 +225,32 @@\n  != %22M%22 and \n-args%5B1%5D\n+etiqueta\n  != %22G%22 and \n@@ -245,31 +245,32 @@\n  != %22G%22 and \n-args%5B1%5D\n+etiqueta\n  != %22GG%22 and\n@@ -270,23 +270,24 @@\n GG%22 and \n-args%5B1%5D\n+etiqueta\n  != %22XG%22\n@@ -311,13 +311,15 @@\n nt(%22\n-Valor\n+tamanho\n  inv\n@@ -327,15 +327,37 @@\n lido\n-, tente\n+! Os tamanhos permitidos s%C3%A3o:\n  PP,\n@@ -365,21 +365,22 @@\n P, M\n-,\n+ e\n  G, GG \n-ou\n+e\n  XG\n+.\n %22)%0A \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-08_23-01-20",
+            "content": "@@ -400,23 +400,24 @@\n manho = \n-args%5B1%5D\n+etiqueta\n %0A       \n@@ -816,42 +816,8 @@\n %5B1%5D)\n-%0A            args%5B1%5D.set_tamanho()\n %0A%0Ama\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-08_23-02-19",
+            "content": "@@ -824,22 +824,23 @@\n         \n-camisa\n+args%5B1%5D\n .set_tam\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-08_23-03-43",
+            "content": "@@ -143,21 +143,8 @@\n self\n-, letter: str\n ):%0A \n@@ -153,22 +153,23 @@\n      if \n-letter\n+args%5B1%5D\n  != %22PP%22\n@@ -169,30 +169,31 @@\n != %22PP%22 and \n-letter\n+args%5B1%5D\n  != %22P%22 and \n@@ -188,30 +188,31 @@\n  != %22P%22 and \n-letter\n+args%5B1%5D\n  != %22M%22 and \n@@ -207,30 +207,31 @@\n  != %22M%22 and \n-letter\n+args%5B1%5D\n  != %22G%22 and \n@@ -226,30 +226,31 @@\n  != %22G%22 and \n-letter\n+args%5B1%5D\n  != %22GG%22 and\n@@ -250,22 +250,23 @@\n GG%22 and \n-letter\n+args%5B1%5D\n  != %22XG%22\n@@ -400,22 +400,23 @@\n manho = \n-letter\n+args%5B1%5D\n %0A       \n@@ -812,16 +812,48 @@\n rgs%5B1%5D)%0A\n+            camisa.set_tamanho()\n %0A%0Amain()\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-08_23-08-11",
+            "content": "@@ -822,46 +822,8 @@\n 1%5D)%0A\n-            camisa.set_tamanho(letter)\n %0A%0Ama\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-08_23-08-59",
+            "content": "@@ -805,16 +805,19 @@\n = str = \n+str\n (args%5B1%5D\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-08_23-09-16",
+            "content": "@@ -69,17 +69,18 @@\n  def get\n-T\n+_t\n amanho(s\n@@ -126,17 +126,18 @@\n  def set\n-T\n+_t\n amanho(s\n@@ -837,17 +837,18 @@\n misa.set\n-T\n+_t\n amanho(l\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-08_23-11-13",
+            "content": "@@ -800,16 +800,18 @@\n er = str\n+ =\n  (args%5B1\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-08_23-11-37",
+            "content": "@@ -800,16 +800,17 @@\n er = str\n+ \n (args%5B1%5D\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-08_23-11-44",
+            "content": "@@ -796,22 +796,16 @@\n letter =\n- str =\n  str(arg\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-08_23-12-03",
+            "content": "@@ -796,16 +796,22 @@\n letter =\n+ str =\n  str(arg\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-08_23-12-11",
+            "content": "@@ -295,14 +295,8 @@\n nt(%22\n-fail: \n Valo\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-08_23-13-58",
+            "content": "@@ -343,16 +343,41 @@\n ou XG%22)%0A\n+            return False%0A\n         \n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-10-08_23-14-07",
+            "content": "@@ -343,16 +343,89 @@\n ou XG%22)%0A\n+        else:%0A            self.__tamanho = letter%0A            return True\n %0A    def\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-08_23-14-14",
+            "content": "@@ -343,16 +343,17 @@\n ou XG%22)%0A\n+%0A\n     def \n@@ -402,16 +402,8 @@\n e: (\n-%7Bletter%7D\n )%22%0Ad\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-08_23-14-58",
+            "content": "@@ -397,17 +397,16 @@\n %22size: (\n-$\n %7Bletter%7D\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-08_23-15-06",
+            "content": "@@ -401,26 +401,16 @@\n e: (\n-%7Bcamisa.getTamanho\n+$%7Bletter\n %7D)%22%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-08_23-15-52",
+            "content": "@@ -396,16 +396,17 @@\n f%22size: \n+(\n %7Bcamisa.\n@@ -419,11 +419,10 @@\n anho\n-()\n %7D\n+)\n %22%0Ade\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-08_23-16-03",
+            "content": "@@ -415,22 +415,16 @@\n Tamanho(\n-letter\n )%7D%22%0Adef \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-08_23-16-10",
+            "content": "@@ -397,16 +397,41 @@\n %22size: %7B\n+camisa.getTamanho(letter)\n %7D%22%0Adef m\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-08_23-16-22",
+            "content": "@@ -396,16 +396,18 @@\n f%22size: \n+%7B%7D\n %22%0Adef ma\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-08_23-16-32",
+            "content": "@@ -400,19 +400,8 @@\n ze: \n-(%7Bargs%5B1%5D%7D)\n %22%0Ade\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-08_23-17-52",
+            "content": "@@ -397,16 +397,25 @@\n %22size: (\n+%7Bargs%5B1%5D%7D\n )%22%0Adef m\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-08_23-18-00",
+            "content": "@@ -403,17 +403,8 @@\n  ()%22\n- + letter\n %0Adef\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-08_23-18-31",
+            "content": "@@ -406,16 +406,14 @@\n %22 + \n-%7B\n letter\n-%7D\n %0Adef\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-08_23-18-50",
+            "content": "@@ -399,16 +399,27 @@\n ize: ()%22\n+ + %7Bletter%7D\n %0Adef mai\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-08_23-18-55",
+            "content": "@@ -721,44 +721,8 @@\n 1%5D)%0A\n-            letter = self.__tamanho%0A\n     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-08_23-19-57",
+            "content": "@@ -742,18 +742,22 @@\n r = \n-camisa.get\n+self.__tamanho\n %0A   \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-08_23-20-17",
+            "content": "@@ -748,23 +748,16 @@\n misa.get\n-Tamanho\n %0A       \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-08_23-20-19",
+            "content": "@@ -717,16 +717,55 @@\n rgs%5B1%5D)%0A\n+            letter = camisa.getTamanho%0A\n         \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-08_23-20-51",
+            "content": "@@ -347,62 +347,8 @@\n G%22)%0A\n-    def tamLet(self):%0A        self.__tamanho = letter%0A\n     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-08_23-22-21",
+            "content": "@@ -775,36 +775,8 @@\n 1%5D)%0A\n-            camisa.tamLet()%0A\n     \n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-10-08_23-22-46",
+            "content": "@@ -358,37 +358,24 @@\n  tamLet(self\n-, letter: str\n ):%0A        s\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-08_23-23-13",
+            "content": "@@ -810,22 +810,16 @@\n .tamLet(\n-letter\n )%0A      \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-08_23-23-28",
+            "content": "@@ -468,16 +468,8 @@\n e: (\n-%7Bletter%7D\n )%22%0Ad\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-08_23-23-40",
+            "content": "@@ -464,16 +464,24 @@\n %22size: (\n+%7Bletter%7D\n )%22%0Adef m\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-08_23-23-53",
+            "content": "@@ -355,15 +355,14 @@\n def \n-__str__\n+tamLet\n (sel\n@@ -376,16 +376,71 @@\n er: str)\n+:%0A        self.__tamanho = letter%0A    def __str__(self)\n  -%3E str:\n@@ -468,16 +468,8 @@\n e: (\n-%7Bletter%7D\n )%22%0Ad\n@@ -784,16 +784,50 @@\n rgs%5B1%5D)%0A\n+            camisa.tamLet(letter)%0A\n         \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-08_23-25-55",
+            "content": "@@ -363,16 +363,29 @@\n r__(self\n+, letter: str\n ) -%3E str\n@@ -410,16 +410,24 @@\n %22size: (\n+%7Bletter%7D\n )%22%0Adef m\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-08_23-26-25",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho = 0\n    def getTamanho(self):\n        return self.__tamanho\n    def setTamanho(self, letter: str):\n        if letter != \"PP\" and letter != \"P\" and letter != \"M\" and letter != \"G\" and letter != \"GG\" and letter != \"XG\":\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n    def __str__(self) -> str:\n        return f\"size: ()\"\ndef main():\n    camisa = Camisa()\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(camisa)\n        elif args[0] == \"size\":\n            letter = str(args[1])\n            camisa.setTamanho(letter)\n\nmain()\n        ",
+            "lines": "26"
+        }
+    ]
+}
