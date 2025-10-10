@@ -212,8 +212,38 @@
         },
         {
             "label": "2025-10-08_23-26-25",
-            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho = 0\n    def getTamanho(self):\n        return self.__tamanho\n    def setTamanho(self, letter: str):\n        if letter != \"PP\" and letter != \"P\" and letter != \"M\" and letter != \"G\" and letter != \"GG\" and letter != \"XG\":\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n    def __str__(self) -> str:\n        return f\"size: ()\"\ndef main():\n    camisa = Camisa()\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(camisa)\n        elif args[0] == \"size\":\n            letter = str(args[1])\n            camisa.setTamanho(letter)\n\nmain()\n        ",
+            "content": "@@ -401,24 +401,8 @@\n e: (\n-%7Bself.__tamanho%7D\n )%22%0Ad\n",
             "lines": "26"
+        },
+        {
+            "label": "2025-10-10_00-13-06",
+            "content": "@@ -347,40 +347,8 @@\n G%22)%0A\n-        self.__tamanho = letter%0A\n     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-10-10_00-14-05",
+            "content": "@@ -347,22 +347,8 @@\n G%22)%0A\n-        else:%0A\n     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-10_00-14-33",
+            "content": "@@ -361,28 +361,24 @@\n se:%0A        \n-    \n self.__taman\n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-10-10_00-14-54",
+            "content": "@@ -361,39 +361,32 @@\n se:%0A            \n-return \n self.__tamanho =\n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-10-10_00-15-04",
+            "content": "@@ -60,10 +60,9 @@\n o = \n-%22%22\n+0\n %0A   \n@@ -365,24 +365,30 @@\n             \n+return\n  self.__tama\n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-10-10_00-15-23",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho = \"\"\n    def getTamanho(self):\n        return self.__tamanho\n    def setTamanho(self, letter: str):\n        if letter != \"PP\" and letter != \"P\" and letter != \"M\" and letter != \"G\" and letter != \"GG\" and letter != \"XG\":\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n        else:\n             self.__tamanho = letter\n    def __str__(self) -> str:\n        return f\"size: ({self.__tamanho})\"\ndef main():\n    camisa = Camisa()\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(camisa)\n        elif args[0] == \"size\":\n            letter = str(args[1])\n            camisa.setTamanho(letter)\n\nmain()\n        ",
+            "lines": "28"
         }
     ]
 }
