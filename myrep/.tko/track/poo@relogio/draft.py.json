@@ -232,8 +232,103 @@
         },
         {
             "label": "2025-10-10_01-30-01",
-            "content": "class Watch:\n    def __init__(self, hour: int, minute: int, second: int):\n        self.__hour = 0\n        self.__minute = 0\n        self.__second = 0\n    def getHour(self):\n        return self.__hour\n    def getMinute(self):\n        return self.__minute\n    def getSecond(self):\n        return self.__second\n    def setHour(self, hour: int):\n        if hour < 0 or hour > 23:\n            print(\"fail: hora invalida\")\n\n            return\n        else:\n            self.__hour = hour\n    def setMinute(self, minute: int):\n        if minute < 0 or minute > 59:\n            print(\"fail: minuto invalido\")\n            return\n        else:\n            self.__minute = minute\n    def setSecond(self, second: int):\n        if second < 0 or second > 59:\n            print(\"fail: segundo invalido\")\n            return\n        else:\n            self.__second = second\n    def nextSecond(self):\n        if self.__hour != 23:\n            self.__hour += 1\n        else:\n            self.__hour = 0\n        if self.__minute != 59:\n            self.__minute += 1\n        else:\n            self.__minute = 0\n        if self.__second != 59:\n            self.__second += 1\n        else:\n            self.__second = 0\n    def __str__(self) -> str:\n        return f\"{self.__hour:02d}:{self.__minute:02d}:{self.__second:02d}\"\ndef main():\n    relogio = Watch(0, 0, 0)\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        if args[0] == \"show\":\n            print(relogio)\n        if args[0] == \"set\":\n            hour = int(args[1])\n            minute = int(args[2])\n            second = int(args[3])\n            relogio.setHour(hour)\n            relogio.setMinute(minute)\n            relogio.setSecond(second)\n        if args[0] == \"init\":\n            hour = int(args[1])\n            minute = int(args[2])\n            second = int(args[3])\n            relogio.setHour(hour)\n            relogio.setMinute(minute)\n            relogio.setSecond(second)\n        if args[0] == \"next\":\n            relogio.nextSecond()\nmain()",
+            "content": "@@ -410,16 +410,17 @@\n alida%22)%0A\n+%0A\n         \n",
             "lines": "72"
+        },
+        {
+            "label": "2025-10-12_18-40-42",
+            "content": "@@ -418,39 +418,30 @@\n             \n-self.__hour = 0\n+return\n %0A        els\n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-12_18-48-08",
+            "content": "@@ -418,36 +418,39 @@\n             \n-return False\n+self.__hour = 0\n %0A        els\n@@ -487,32 +487,8 @@\n our%0A\n-            return True%0A\n     \n@@ -612,38 +612,32 @@\n           return\n- False\n %0A        else:%0A \n@@ -674,32 +674,8 @@\n ute%0A\n-            return True%0A\n     \n@@ -808,22 +808,16 @@\n   return\n- False\n %0A       \n@@ -862,32 +862,8 @@\n ond%0A\n-            return True%0A\n     \n@@ -1203,105 +1203,8 @@\n = 0%0A\n-    def reset(self):%0A        self.__hour = 0%0A        self.__minute = 0%0A        self.__second = 0%0A\n     \n@@ -1995,32 +1995,32 @@\n tMinute(minute)%0A\n+\n             relo\n@@ -2045,145 +2045,8 @@\n nd)%0A\n-            if relogio.setHour(hour) or relogio.setMinute(minute) or relogio.setSecond(second) == False:%0A                relogio.reset()%0A\n     \n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-10-12_19-06-09",
+            "content": "@@ -2317,19 +2317,20 @@\n ond) == \n-Tru\n+Fals\n e:%0A     \n",
+            "lines": "80"
+        },
+        {
+            "label": "2025-10-12_19-06-55",
+            "content": "@@ -2256,19 +2256,18 @@\n r(hour) \n-and\n+or\n  relogio\n@@ -2289,11 +2289,10 @@\n te) \n-and\n+or\n  rel\n",
+            "lines": "80"
+        },
+        {
+            "label": "2025-10-12_19-07-33",
+            "content": "@@ -2319,20 +2319,19 @@\n ond) == \n-Fals\n+Tru\n e:%0A     \n",
+            "lines": "80"
+        },
+        {
+            "label": "2025-10-12_19-07-50",
+            "content": "@@ -2238,12 +2238,8 @@\n  if \n-not \n relo\n@@ -2315,16 +2315,25 @@\n (second)\n+ == False\n :%0A      \n",
+            "lines": "80"
+        },
+        {
+            "label": "2025-10-12_19-08-44",
+            "content": "@@ -2101,32 +2101,142 @@\n  = int(args%5B3%5D)%0A\n+            relogio.setHour(hour)%0A            relogio.setMinute(minute)%0A            relogio.setSecond(second)%0A\n             if n\n",
+            "lines": "80"
+        },
+        {
+            "label": "2025-10-12_19-09-13",
+            "content": "@@ -2124,16 +2124,20 @@\n      if \n+not \n relogio.\n@@ -2213,17 +2213,8 @@\n ond)\n- == False\n :%0A  \n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-10-12_19-09-28",
+            "content": "@@ -2146,18 +2146,19 @@\n r(hour) \n-or\n+and\n  relogio\n@@ -2176,18 +2176,19 @@\n minute) \n-or\n+and\n  relogio\n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-10-12_19-10-24",
+            "content": "@@ -1321,24 +1321,76 @@\n .__hour = 0%0A\n+        self.__minute = 0%0A        self.__second = 0%0A\n     def __st\n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-10-12_19-10-42",
+            "content": "@@ -2093,16 +2093,74 @@\n ur(hour)\n+ or relogio.setMinute(minute) or relogio.setSecond(second)\n  == Fals\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-12_19-11-23",
+            "content": "@@ -1329,60 +1329,8 @@\n = 0%0A\n-        self.__minute = 0%0A        self.__second = 0%0A\n     \n@@ -2097,66 +2097,8 @@\n our)\n- or relogio.setMinute(minute) or relogio.setSecond(second)\n  == \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-12_19-12-04",
+            "content": "@@ -2128,12 +2128,8 @@\n  if \n-not \n relo\n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-10-12_19-14-24",
+            "content": "@@ -2207,16 +2207,25 @@\n (second)\n+ == False\n :%0A      \n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-10-12_19-14-32",
+            "content": "@@ -2150,19 +2150,18 @@\n r(hour) \n-and\n+or\n  relogio\n@@ -2183,11 +2183,10 @@\n te) \n-and\n+or\n  rel\n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-10-12_19-14-55",
+            "content": "@@ -1293,20 +1293,16 @@\n ef reset\n-Hour\n (self):%0A\n@@ -1321,24 +1321,76 @@\n .__hour = 0%0A\n+        self.__minute = 0%0A        self.__second = 0%0A\n     def __st\n@@ -2124,16 +2124,20 @@\n      if \n+not \n relogio.\n@@ -2154,16 +2154,67 @@\n ur) \n-== False\n+and relogio.setMinute(minute) and relogio.setSecond(second)\n :%0A  \n@@ -2240,20 +2240,16 @@\n io.reset\n-Hour\n ()%0A     \n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-10-12_19-17-51",
+            "content": "@@ -2148,186 +2148,8 @@\n r()%0A\n-            if relogio.setMinute(minute) == False:%0A                relogio.resetMinute()%0A            if relogio.setSecond(second) == False:%0A                relogio.resetSecond()%0A\n     \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-12_19-19-37",
+            "content": "@@ -1333,114 +1333,8 @@\n = 0%0A\n-    def resetMinute(self):%0A        self.__minute = 0%0A    def resetSecond(self):%0A        self.__second = 0%0A\n     \n",
+            "lines": "79"
+        },
+        {
+            "label": "2025-10-12_19-20-48",
+            "content": "class Watch:\n    def __init__(self, hour: int, minute: int, second: int):\n        self.__hour = 0\n        self.__minute = 0\n        self.__second = 0\n    def getHour(self):\n        return self.__hour\n    def getMinute(self):\n        return self.__minute\n    def getSecond(self):\n        return self.__second\n    def setHour(self, hour: int):\n        if hour < 0 or hour > 23:\n            print(\"fail: hora invalida\")\n            return False\n        else:\n            self.__hour = hour\n            return True\n    def setMinute(self, minute: int):\n        if minute < 0 or minute > 59:\n            print(\"fail: minuto invalido\")\n            return False\n        else:\n            self.__minute = minute\n            return True\n    def setSecond(self, second: int):\n        if second < 0 or second > 59:\n            print(\"fail: segundo invalido\")\n            return False\n        else:\n            self.__second = second\n            return True\n    def nextSecond(self):\n        if self.__hour != 23:\n            self.__hour += 1\n        else:\n            self.__hour = 0\n        if self.__minute != 59:\n            self.__minute += 1\n        else:\n            self.__minute = 0\n        if self.__second != 59:\n            self.__second += 1\n        else:\n            self.__second = 0\n    def resetHour(self):\n        self.__hour = 0\n    def resetMinute(self):\n        self.__minute = 0\n    def resetSecond(self):\n        self.__second = 0\n    def __str__(self) -> str:\n        return f\"{self.__hour:02d}:{self.__minute:02d}:{self.__second:02d}\"\ndef main():\n    relogio = Watch(0, 0, 0)\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        if args[0] == \"show\":\n            print(relogio)\n        if args[0] == \"set\":\n            hour = int(args[1])\n            minute = int(args[2])\n            second = int(args[3])\n            relogio.setHour(hour)\n            relogio.setMinute(minute)\n            relogio.setSecond(second)\n        if args[0] == \"init\":\n            hour = int(args[1])\n            minute = int(args[2])\n            second = int(args[3])\n            if relogio.setHour(hour) == False:\n                relogio.resetHour()\n            if relogio.setMinute(minute) == False:\n                relogio.resetMinute()\n            if relogio.setSecond(second) == False:\n                relogio.resetSecond()\n        if args[0] == \"next\":\n            relogio.nextSecond()\nmain()",
+            "lines": "83"
         }
     ]
 }
