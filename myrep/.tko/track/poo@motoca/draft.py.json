@@ -1,0 +1,254 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-20_18-53-57",
+            "content": "@@ -42,21 +42,26 @@\n    self.\n-power\n+__potencia\n : int = \n@@ -75,20 +75,23 @@\n    self.\n-time\n+__tempo\n : int = \n@@ -109,571 +109,35 @@\n elf.\n-person: Person = None%0A    def insert(self, person: Person): bool:%0A        if self.person != None:%0A            print(%22fail: busy motorcycle%22)%0A            return False%0A        else:%0A            self.person = person%0A            return True%0A    def remove(self): Person %7C None%0A        if self.person == None:%0A            print(%22fail: empty motorcycle%22)%0A            return None%0A        else:%0A            self.person  person%0A            return True%0A%0A    def __str__(self) -%3E str:%0A        return f%22power:%7Bthis.power%7D, time:%7Bthis.time%7D, person:%7Bthis.person%7D%22%0Aclass Person\n+__pessoa: None%0Aclass Pessoa\n :%0A  \n@@ -174,17 +174,17 @@\n self.__n\n-a\n+o\n me: str%0A\n@@ -202,189 +202,14 @@\n f.__\n-age: int%0A    def getName(self):%0A        return self.__name%0A    def getAge(self):%0A        return self.__age%0A    def __str__(self) -%3E str:%0A        return f%22%7Bself.__name%7D:%7Bself.__age%7D%22%0A%0A%0A%0A\n+idade: int\n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-10-20_19-20-22",
+            "content": "@@ -155,17 +155,17 @@\n  Person)\n- \n+:\n  bool:%0A \n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-20_19-20-41",
+            "content": "@@ -156,18 +156,16 @@\n Person) \n--%3E\n  bool:%0A \n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-20_19-20-55",
+            "content": "@@ -356,19 +356,17 @@\n ve(self)\n- -%3E\n+:\n  Person \n@@ -367,25 +367,24 @@\n erson %7C None\n-:\n %0A        if \n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-20_19-21-45",
+            "content": "@@ -355,32 +355,16 @@\n ove(self\n-, person: Person\n ) -%3E Per\n@@ -513,17 +513,16 @@\n .person \n--\n  person%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-20_19-22-11",
+            "content": "@@ -1,264 +1,4 @@\n-class Person:%0A    def __init__(self):%0A        self.__name: str%0A        self.__age: int%0A    def getName(self):%0A        return self.__name%0A    def getAge(self):%0A        return self.__age%0A    def __str__(self) -%3E str:%0A        return f%22%7Bself.__name%7D:%7Bself.__age%7D%22%0A\n clas\n@@ -670,8 +670,271 @@\n erson%7D%22%0A\n+class Person:%0A    def __init__(self):%0A        self.__name: str%0A        self.__age: int%0A    def getName(self):%0A        return self.__name%0A    def getAge(self):%0A        return self.__age%0A    def __str__(self) -%3E str:%0A        return f%22%7Bself.__name%7D:%7Bself.__age%7D%22%0A%0A%0A%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-20_19-22-36",
+            "content": "@@ -934,211 +934,4 @@\n n%7D%22%0A\n-def main():%0A    motoca = Moto ()%0A    while True:%0A        line: str = input()%0A        print(%22$%22 + line)%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A        if args%5B0%5D == %22show%22:%0A            print(motoca)%0Amain()\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-20_19-27-54",
+            "content": "@@ -814,32 +814,33 @@\n     return True%0A\n+%0A\n     def __str__(\n@@ -877,20 +877,20 @@\n %22power:%7B\n-self\n+this\n .power%7D,\n@@ -896,20 +896,20 @@\n , time:%7B\n-self\n+this\n .time%7D, \n@@ -916,20 +916,20 @@\n person:%7B\n-self\n+this\n .person%7D\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-10-20_19-28-37",
+            "content": "@@ -909,106 +909,10 @@\n ime%7D\n-%22%0A        if self.person == None:%0A            return %22person:(empty)%22%0A        else:%0A            f%22\n+, \n pers\n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-10-20_19-31-55",
+            "content": "@@ -905,17 +905,16 @@\n lf.time%7D\n-,\n %22%0A      \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-20_19-32-02",
+            "content": "@@ -906,17 +906,16 @@\n f.time%7D,\n- \n %22%0A      \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-20_19-32-05",
+            "content": "@@ -1003,23 +1003,16 @@\n         \n-return \n f%22person\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-20_19-32-16",
+            "content": "@@ -953,22 +953,23 @@\n         \n-print(\n+return \n %22person:\n@@ -976,17 +976,16 @@\n (empty)%22\n-)\n %0A       \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-20_19-33-02",
+            "content": "@@ -953,23 +953,22 @@\n         \n-return \n+print(\n %22person:\n@@ -975,16 +975,17 @@\n (empty)%22\n+)\n %0A       \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-20_19-33-36",
+            "content": "@@ -1083,16 +1083,43 @@\n e True:%0A\n+        line: str = input()\n %0A       \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-20_19-33-50",
+            "content": "@@ -1087,35 +1087,8 @@\n ue:%0A\n-        line: str = input()\n %0A   \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-20_19-33-59",
+            "content": "@@ -1067,19 +1067,10 @@\n Moto\n+ \n (\n-1, 0, None\n )%0A  \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-20_19-34-30",
+            "content": "@@ -1068,16 +1068,22 @@\n oto(1, 0\n+, None\n )%0A    wh\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-20_19-34-37",
+            "content": "@@ -1064,16 +1064,20 @@\n  = Moto(\n+1, 0\n )%0A    wh\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-20_19-34-57",
+            "content": "@@ -913,28 +913,24 @@\n , %22%0A        \n-    \n if self.pers\n@@ -933,36 +933,32 @@\n person == None:%0A\n-    \n             retu\n@@ -981,38 +981,30 @@\n y)%22%0A        \n-    \n else:%0A\n-    \n             \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-20_19-35-15",
+            "content": "@@ -909,32 +909,36 @@\n ime%7D, %22%0A        \n+    \n if self.person =\n@@ -937,32 +937,36 @@\n person == None:%0A\n+    \n             retu\n@@ -985,38 +985,46 @@\n empty)%22%0A        \n+    \n else:%0A\n+    \n             retu\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-20_19-35-22",
+            "content": "@@ -864,12 +864,14 @@\n     \n-st =\n+return\n  f%22p\n@@ -953,21 +953,22 @@\n         \n-st +=\n+return\n  %22person\n@@ -1007,13 +1007,14 @@\n     \n-st +=\n+return\n  f%22p\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-20_19-37-26",
+            "content": "@@ -1034,26 +1034,8 @@\n n%7D%22%0A\n-        return st%0A\n def \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-10-20_19-37-44",
+            "content": "@@ -1109,16 +1109,22 @@\n    line:\n+ str =\n  input()\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-20_19-38-42",
+            "content": "@@ -1108,18 +1108,17 @@\n     line\n- =\n+:\n  input()\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-20_19-38-52",
+            "content": "@@ -1104,25 +1104,16 @@\n         \n-%0A        \n line = i\n@@ -1117,16 +1117,42 @@\n = input(\n+)%0A        print(%22$%22 + line\n )%0A      \n@@ -1191,43 +1191,8 @@\n  %22)%0A\n-        print(%22$%22 + line)%0A        %0A\n     \n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-20_19-39-19",
+            "content": "@@ -1122,12 +1122,8 @@\n ine \n-str \n = in\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-10-20_19-39-29",
+            "content": "@@ -1108,47 +1108,34 @@\n     \n-line = input()%0A        print(%22$%22 + line\n+%0A        line str = input(\n )%0A  \n@@ -1174,16 +1174,51 @@\n it(%22 %22)%0A\n+        print(%22$%22 + line)%0A        %0A\n         \n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-10-20_19-39-42",
+            "content": "@@ -1082,16 +1082,8 @@\n oto(\n-%22%22, 1, 0\n )%0A  \n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-20_19-41-46",
+            "content": "@@ -1082,16 +1082,16 @@\n oto(\n+%22%22, \n 1, 0\n-, %22%22\n )%0A  \n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-20_19-42-07",
+            "content": "@@ -1077,17 +1077,16 @@\n a = Moto\n- \n (1, 0, %22\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-20_19-42-28",
+            "content": "@@ -363,16 +363,24 @@\n f.person\n+: Person\n  = None%0A\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-20_19-44-08",
+            "content": "@@ -290,48 +290,8 @@\n self\n-, person: int, time: int, person: Person\n ):%0A \n@@ -307,16 +307,21 @@\n lf.power\n+: int\n  = 1%0A   \n@@ -334,16 +334,21 @@\n elf.time\n+: int\n  = 0%0A   \n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-20_19-45-37",
+            "content": "@@ -320,19 +320,22 @@\n person: \n-str\n+Person\n ):%0A     \n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-20_19-46-00",
+            "content": "@@ -32,29 +32,8 @@\n self\n-, name: str, age: int\n ):%0A \n@@ -427,19 +427,22 @@\n person: \n-str\n+Person\n ) -%3E boo\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-20_19-50-05",
+            "content": "@@ -1158,15 +1158,11 @@\n line\n-: str\n  =\n+ \n inpu\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-20_19-50-44",
+            "content": "@@ -658,27 +658,30 @@\n lf, person: \n-str\n+Person\n ) -%3E Person \n@@ -1161,17 +1161,16 @@\n e: str =\n- \n input()%0A\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-20_19-51-48",
+            "content": "@@ -414,18 +414,20 @@\n erson = \n-%22%22\n+None\n %0A    def\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-20_19-52-12",
+            "content": "@@ -410,30 +410,26 @@\n lf.person = \n-person\n+%22%22\n %0A    def ins\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-20_19-52-30",
+            "content": "@@ -310,20 +310,21 @@\n (self, p\n-ow\n er\n+son\n : int, t\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-20_19-53-32",
+            "content": "@@ -1161,17 +1161,18 @@\n  str\n-(\n+ = \n input()\n-)\n %0A   \n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-20_19-53-53",
+            "content": "@@ -1152,18 +1152,17 @@\n     line\n- =\n+:\n  str(inp\n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-20_19-54-26",
+            "content": "@@ -1156,23 +1156,23 @@\n line\n-:\n+ =\n  str\n- = \n+(\n input()\n+)\n %0A   \n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-20_19-55-03",
+            "content": "@@ -1240,55 +1240,8 @@\n  %22)%0A\n-        if args%5B0%5D == %22end%22:%0A            break%0A\n     \n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-10-20_19-56-03",
+            "content": "@@ -984,33 +984,32 @@\n           st += \n-f\n %22person:(empty)%22\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-10-20_19-56-33",
+            "content": "@@ -413,20 +413,22 @@\n erson = \n-N\n+pers\n on\n-e\n %0A    def\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-10-20_19-57-03",
+            "content": "@@ -859,81 +859,8 @@\n rue%0A\n-    def enter(self, name: str, age: int):%0A        self.person = Person()%0A\n     \n@@ -1342,53 +1342,8 @@\n ca)%0A\n-        if args%5B0%5D == %22enter%22:%0A             %0A\n main\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-10-20_20-00-26",
+            "content": "@@ -930,17 +930,8 @@\n son(\n-name, age\n )%0A  \n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-10-20_20-00-52",
+            "content": "@@ -1455,51 +1455,8 @@\n r%22:%0A\n-            motoca.enter(args%5B1%5D, args%5B2%5D)%0A\n     \n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-10-20_20-02-06",
+            "content": "class Person:\n    def __init__(self, name: str, age: int):\n        self.__name: str\n        self.__age: int\n    def getName(self):\n        return self.__name\n    def getAge(self):\n        return self.__age\n    def __str__(self) -> str:\n        return f\"{self.__name}:{self.__age}\"\nclass Moto:\n    def __init__(self, power: int, time: int, person: str):\n        self.power = 1\n        self.time = 0\n        self.person = None\n    def insert(self, person: str) -> bool:\n        if self.person != None:\n            print(\"fail: busy motorcycle\")\n            return False\n        else:\n            self.person = person\n            return True\n    def remove(self, person: str) -> Person | None:\n        if self.person == None:\n            print(\"fail: empty motorcycle\")\n            return None\n        else:\n            self.person - person\n            return True\n    def enter(self, name: str, age: int):\n        self.person = Person(name, age)\n    def __str__(self) -> str:\n        st = f\"power:{self.power}, time:{self.time}, \"\n        if self.person == None:\n            st += f\"person:(empty)\"\n        else:\n            st += f\"person:{self.person}\"\n        return st\ndef main():\n    motoca = Moto (1, 0, \"\")\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        if args[0] == \"show\":\n            print(motoca)\n        if args[0] == \"enter\":\n            motoca.enter(args[1], args[2])\n             \nmain()",
+            "lines": "52"
+        }
+    ]
+}
