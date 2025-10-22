@@ -1,7 +1,7 @@
 class Person:
     def __init__(self, name: str, age: int):
-        self.__name: str
-        self.__age: int
+        self.__name = name
+        self.__age = age
     def getName(self):
         return self.__name
     def getAge(self):
@@ -13,7 +13,7 @@ class Moto:
         self.power = 1
         self.time = 0
         self.person = None
-    def insert(self, person: str) -> bool:
+    def insert(self, person: Person) -> bool:
         if self.person != None:
             print("fail: busy motorcycle")
             return False
@@ -34,7 +34,7 @@ class Moto:
         if self.person == None:
             st += f"person:(empty)"
         else:
-            st += f"person:{self.person}"
+            st += f"person:({self.person})"
         return st
 def main():
     motoca = Moto (1, 0, "")
@@ -47,6 +47,9 @@ def main():
         if args[0] == "show":
             print(motoca)
         if args[0] == "enter":
-            motoca.enter(args[1], args[2])
+            person = Person(args[1], args[2])
+            motoca.insert(person)
+        if args[0] == "init":
+            amount = int(args[1])
              
 main()
