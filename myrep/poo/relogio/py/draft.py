@@ -23,7 +23,7 @@ class Watch:
         else:
             self.__minute = minute
             return True
-    def setSecond(self, second: int):
+    def setSecond(self, matursecond: int):
         if second < 0 or second > 59:
             print("fail: segundo invalido")
             return False

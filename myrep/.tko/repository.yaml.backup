@@ -8,7 +8,7 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: /workspaces/poo-dd-cd-bloco-b-Isaque-Bernardino/myrep/.tko/cache/poo.md
-  cache_timestamp: '2025-10-21 19:11:16'
+  cache_timestamp: '2025-10-25 16:30:58'
   filters:
   - acesso
   - simples
@@ -17,13 +17,24 @@ expanded:
 - poo@bloco_b-modificadores-de-acesso
 - poo@bloco_b-agregação-simples
 tasks:
-  poo@roupa: '{rate:100}'
-  poo@relogio: '{rate:100}'
+  poo@chinela: '{rate:100, human:tive_auxilio_de_monitores__que_me_explicaram_a_logica_de_alguns_metodos,
+    alone:7, study:160}'
+  poo@camisa: '{rate:90, human:tive_a_ajuda_de_monitores_para_entender_a_logica_do_set_tamanho,
+    alone:8, study:40}'
+  poo@roupa: '{rate:100, human:pedi_alguma_orientaces_a_amigos_e_monitores_sobre_alguns_erros_de_sintaxe_e_de_logica,
+    alone:8, study:60}'
+  poo@relogio: '{rate:100, human:matutei_um_pouco_para_entender_tive_ajuda_de_amigos_e_monitores_mas_consegui_aprender_a_logica_basica,
+    alone:7, study:180}'
+  poo@motoca: '{rate:100, human:tive_bastante_dificuldade_de_entender_pedi_auxilio_de_monitores_para_entender_a_logica,
+    iagen:pedi_ao_chatgpt_que_me_explicasse_a_logica_e_o_que_utilizar_em_alguns_metodos,
+    alone:7, study:200}'
+  poo@motouber: '{rate:100, iagen:pedi_ao_chatgpt_que_me_indicasse_erros_de_chamada_de_metodos_sintaxe_e_erros_de_logica,
+    alone:8, study:120}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
-  graph: 0
+  graph: 1
   xray: 0
 lang: py
-selected: poo@motoca
+selected: poo@grafite
