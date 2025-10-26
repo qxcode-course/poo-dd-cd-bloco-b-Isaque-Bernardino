@@ -77,3 +77,31 @@
 2025-10-26 19:12:30, EXEC, v:1, k:poo@grafite, mode:FULL, rate:90, size:91
 2025-10-26 19:30:59, EXEC, v:1, k:poo@grafite, mode:FULL, rate:100, size:95
 2025-10-26 19:35:21, EXEC, v:1, k:poo@grafite, mode:FULL, rate:100
+2025-10-26 20:03:12, MOVE, v:1, k:poo@grafite, mode:BACK
+2025-10-26 20:03:14, MOVE, v:1, k:poo@grafite, mode:PICK
+2025-10-26 20:03:14, EXEC, v:1, k:poo@grafite, mode:FULL, rate:100
+2025-10-26 20:03:15, MOVE, v:1, k:poo@grafite, mode:BACK
+2025-10-26 20:03:17, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-26 20:03:18, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100
+2025-10-26 20:03:19, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-26 20:03:21, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-26 20:03:22, EXEC, v:1, k:poo@roupa, mode:FULL, rate:100
+2025-10-26 20:03:23, MOVE, v:1, k:poo@roupa, mode:BACK
+2025-10-26 20:03:26, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-26 20:03:26, EXEC, v:1, k:poo@camisa, mode:LOCK, rate:0
+2025-10-26 20:03:29, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-26 20:03:31, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-26 20:03:33, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-26 20:03:35, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-26 20:03:35, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:0
+2025-10-26 20:03:36, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-26 20:03:44, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-26 20:03:45, EXEC, v:1, k:poo@motoca, mode:FULL, rate:100
+2025-10-26 20:03:46, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-26 20:03:49, MOVE, v:1, k:poo@grafite, mode:PICK
+2025-10-26 20:03:50, EXEC, v:1, k:poo@grafite, mode:FULL, rate:100
+2025-10-26 20:03:50, MOVE, v:1, k:poo@grafite, mode:BACK
+2025-10-26 20:03:52, MOVE, v:1, k:poo@motouber, mode:PICK
+2025-10-26 20:03:53, EXEC, v:1, k:poo@motouber, mode:FULL, rate:100
+2025-10-26 20:03:53, MOVE, v:1, k:poo@motouber, mode:BACK
+2025-10-26 20:06:21, SELF, v:1, k:poo@grafite, rate:100, human:pedi_auxilio_de_meus_amigos_com_a_implementacao_da_folha_incompleta, iagen:usei_chatgpt_para_me_auxiliar_na_compreensao_da_questao_que_tive_dificuldade_de_entender_alem_de_corrigir_erros_de_sintaxe_e_de_logica, alone:6, study:230
